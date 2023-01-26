@@ -1,12 +1,10 @@
 <script>
-  import { redirect } from "@sveltejs/kit";
-  let username = "";
-  let password = "";
+  /** @type {import('./$types').ActionData} */
 
   function handleSubmit() {
     // do something with the email and password
     console.log(username, password);
-    //throw redirect(307, '/');
+    throw redirect(307, "/");
     // for example you can use fetch to post the data to a server
     //fetch('https://your-server.com/login', {
   }
@@ -36,15 +34,15 @@
   }
 </script>
 
-<form on:submit|preventDefault={getJWT}>
+<form method="POST">
   <label>
-    Username:
-    <input type="text" bind:value={username} required />
+    Username
+    <input name="username" type="text" required />
   </label>
   <label>
-    Password:
-    <input type="password" bind:value={password} required />
+    Password
+    <input name="password" type="password" required />
   </label>
-  <button type="submit">Login</button>
+  <button type="submit">Log in</button>
 </form>
 <a href="/register">register</a>
