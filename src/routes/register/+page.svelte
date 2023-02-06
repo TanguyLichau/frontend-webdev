@@ -1,4 +1,5 @@
 <script>
+  /** @type {import('./$types').ActionData} */
 </script>
 
 <form method="POST">
