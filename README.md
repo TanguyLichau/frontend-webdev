@@ -1,38 +1,25 @@
-# create-svelte
+# Web Application Frontend Project
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+This frontend was made based of the backend created by the teacher, it is accessible [here](!https://github.com/RochMoreau/secure-web-dev-backend)
 
-## Creating a project
+## User Stories Completed
 
-If you're seeing this, you've probably already done this step. Congrats!
+- [x] Special home page :)
+- [x] US1 : Random visitor can register / log in
+- [x] US2 : If a visitor is not logged in, he cannot access /locations route and will be redirected to the /login route
+- [x] US3 : The logged in user can view the locations and open a modal to get more info on a specific location
+- [x] US4 : If a user is an admin, he can add a new location
+- [x] US5 : If a user is an admin, he can modify a location
+- [x] US6 : If a user is an admin, he can delete a location
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Installation
 
-# create a new project in my-app
-npm create svelte@latest my-app
+    git clone https://github.com/TanguyLichau/frontend-webdev.git
+    cd frontend-webdev
+    npm install
+
+After installation you can run the project with
+
 ```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
