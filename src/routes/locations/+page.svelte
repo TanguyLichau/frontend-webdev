@@ -22,8 +22,7 @@
         on:click={() => {
           window.location.reload();
         }}
-        type="submit">Save</button
-      >
+        type="submit">Save</button>
     </form>
   {/if}
 {/if}
