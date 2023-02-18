@@ -1,6 +1,6 @@
 # Web Application Frontend Project
 
-This frontend was made based of the backend created by the teacher, it is accessible [here](!https://github.com/RochMoreau/secure-web-dev-backend)
+This frontend was made based of the backend created by the teacher, it is accessible [here](https://github.com/RochMoreau/secure-web-dev-backend)
 
 ## User Stories Completed
 
@@ -23,3 +23,4 @@ After installation you can run the project with
 ```
 npm run dev
 ```
+You can now access the app at http://localhost:5173/
